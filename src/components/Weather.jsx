@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Weather.css";
 
 // Import icons
@@ -12,9 +12,8 @@ import snow_icon from "../assets/snow.png";
 import wind_icon from "../assets/wind.png";
 
 const Weather = () => {
-  const [city, setCity] = useState("");
+  const cityInputRef = useRef(null);
   const [weatherData, setWeatherData] = useState(null);
-  const [icon, setIcon] = useState(clear_icon);
 
   const api_key = `${import.meta.env.VITE_API_KEY}`; // Replace with your API key
 
@@ -39,11 +38,21 @@ const Weather = () => {
     "50n": cloud_icon,
   };
 
+  // Derive icon from weather data
+  const getWeatherIcon = () => {
+    if (!weatherData) return clear_icon;
+    const iconCode = weatherData.weather[0].icon;
+    return weatherIcons[iconCode] || clear_icon;
+  };
+
   const handleSearch = async () => {
+    const city = cityInputRef.current.value.trim();
+
     if (!city) {
       alert("Enter city name");
       return;
     }
+
     try {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${api_key}`;
       const res = await fetch(url);
@@ -56,12 +65,14 @@ const Weather = () => {
         return;
       }
       setWeatherData(data);
-
-      // Set weather icon
-      const iconCode = data.weather[0].icon;
-      setIcon(weatherIcons[iconCode] || clear_icon);
     } catch (err) {
       alert("Error fetching weather data");
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
     }
   };
 
@@ -69,11 +80,10 @@ const Weather = () => {
     <div className="weather">
       <div className="search-bar">
         <input
+          ref={cityInputRef}
           type="text"
           placeholder="Search"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+          onKeyDown={handleKeyDown}
         />
         <img
           src={search_icon}
@@ -84,7 +94,11 @@ const Weather = () => {
       </div>
       {weatherData && (
         <>
-          <img src={icon} alt="weather icon" className="weather-icon" />
+          <img
+            src={getWeatherIcon()}
+            alt="weather icon"
+            className="weather-icon"
+          />
           <p className="temperature">{Math.round(weatherData.main.temp)}°C</p>
           <p className="city">{weatherData.name}</p>
           <div className="details">
