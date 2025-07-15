@@ -7,9 +7,11 @@
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![OpenWeatherMap](https://img.shields.io/badge/API-OpenWeatherMap-FF6B00?style=for-the-badge&logo=cloud&logoColor=white)
 
-
-
 A modern, responsive weather application built with React and Vite that provides real-time weather information for any city worldwide.
+
+<img width="1920" height="910" alt="Screenshot 2025-07-15 215151" src="https://github.com/user-attachments/assets/5c0097a3-36b0-4e32-b9f9-110676555feb" />
+
+<img width="1920" height="929" alt="Screenshot 2025-07-15 150058" src="https://github.com/user-attachments/assets/4fac5975-19ff-4188-b912-5bb8e59ca85b" />
 
 ---
 ## ✨ Features
