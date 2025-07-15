@@ -9,7 +9,8 @@
 
 A modern, responsive weather application built with React and Vite that provides real-time weather information for any city worldwide.
 
-<img width="1920" height="910" alt="Screenshot 2025-07-15 215151" src="https://github.com/user-attachments/assets/5c0097a3-36b0-4e32-b9f9-110676555feb" />
+<img width="1920" height="925" alt="Screenshot 2025-07-15 221318" src="https://github.com/user-attachments/assets/64732dab-f816-4a59-96f9-6ef78c7b527a" />
+
 
 <img width="1920" height="929" alt="Screenshot 2025-07-15 150058" src="https://github.com/user-attachments/assets/4fac5975-19ff-4188-b912-5bb8e59ca85b" />
 
