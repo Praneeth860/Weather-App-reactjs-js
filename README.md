@@ -9,10 +9,6 @@
 
 A modern, responsive weather application built with React and Vite that provides real-time weather information for any city worldwide.
 
-<img width="1920" height="925" alt="Screenshot 2025-07-15 221318" src="https://github.com/user-attachments/assets/64732dab-f816-4a59-96f9-6ef78c7b527a" />
-
-
-<img width="1920" height="929" alt="Screenshot 2025-07-15 150058" src="https://github.com/user-attachments/assets/4fac5975-19ff-4188-b912-5bb8e59ca85b" />
 
 ---
 ## ✨ Features
@@ -25,6 +21,10 @@ A modern, responsive weather application built with React and Vite that provides
 - 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
 
 ## 📸 Screenshots
+<img width="1920" height="925" alt="Screenshot 2025-07-15 221318" src="https://github.com/user-attachments/assets/64732dab-f816-4a59-96f9-6ef78c7b527a" />
+
+
+<img width="1920" height="929" alt="Screenshot 2025-07-15 150058" src="https://github.com/user-attachments/assets/4fac5975-19ff-4188-b912-5bb8e59ca85b" />
 
 The app displays:
 - 🌡️ Current temperature in Celsius
@@ -89,7 +89,7 @@ Before running this application, make sure you have:
 - `npm run dev` - 🚀 Start development server
 - `npm run build` - 📦 Build for production
 - `npm run preview` - 👀 Preview production build
-- `npm run lint` - 🔍 Run ESLint
+
 
 
 ## 🎯 Usage
@@ -135,12 +135,19 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🙏 Acknowledgments
 
 - 🌐 Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
-- 🎨 Icons and design inspiration from modern weather applications
-- ⚛️ Built with React and Vite for optimal performance
+- 🎥 This project was inspired by tutorials from the [GreatStack YouTube channel](https://www.youtube.com/@GreatStackDev). 
 
-## 🆘 Support
 
-If you encounter any issues or have questions, please open an issue on the GitHub repository.
+
+## ☕ Support
+
+If you find this project useful, consider showing your support:
+
+- If you encounter any issues or have questions, please open an issue on the GitHub repository.
+- ⭐ Star the repository on [GitHub](https://github.com/Praneeth860/Weather-App-reactjs-js)
+
+- [![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/Praneeth_Medicharla)
+
 
 ---
 
