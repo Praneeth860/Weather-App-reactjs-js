@@ -135,7 +135,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🙏 Acknowledgments
 
 - 🌐 Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
-- 🎥 This project was inspired by tutorials from the [GreatStack YouTube channel](https://www.youtube.com/@GreatStackDev). 
+- 🎥 This project is based on the weather app tutorial by the [GreatStack YouTube channel](https://www.youtube.com/@GreatStackDev). 
 
 
 
