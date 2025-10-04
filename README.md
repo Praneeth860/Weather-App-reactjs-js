@@ -16,8 +16,7 @@ A modern, responsive weather application built with React and Vite that provides
 - 🎨 **Beautiful UI**: Clean, modern interface with smooth transitions
 - 🌦️ **Weather Icons**: Dynamic weather icons that change based on current conditions
 - 📊 **Detailed Information**: Temperature, humidity, and wind speed data
-- 🔍 **Search Functionality**: Easy city search with Enter key support
-- 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
+
 
 ## 📸 Screenshots
 <img width="1920" height="925" alt="Screenshot 2025-07-15 221318" src="https://github.com/user-attachments/assets/64732dab-f816-4a59-96f9-6ef78c7b527a" />
